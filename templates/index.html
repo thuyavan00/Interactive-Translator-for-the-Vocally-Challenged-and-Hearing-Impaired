@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Express</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body >
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"><span>Express.</span></a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a class="nav-link" aria-current="page" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="download">Downloads</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{url_for('train')}}">Train</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{url_for('vfeed')}}">Translate</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{url_for('flist')}}">Forum</a></li>
+	          <li class="nav-item cta"><a href="#loio" class="nav-link" >Developers</a></li>
+
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    
+    <section class="hero-wrap js-fullheight" style="background-image: url('images/banner.gif');" data-section="home">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-md-8 ftco-animate mt-5" data-scrollax=" properties: { translateY: '70%' }">
+          	<p class="d-flex align-items-center" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"></p>
+			  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">You don't need a voice to express yourself</h1>
+            <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">An express solution to the expression problem</p>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+		<section class="ftco-section ftco-services ftco-no-pt">
+      <div class="container">
+        <div class="row services-section">
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services text-center d-block">
+              <div class="icon"><span class="flaticon-layers"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Train</h3>
+                <p>Help us in our endeavor to create smart sign AI by training our model with your compute resources. You can also train for other languages.</p>
+                <br>
+                <p><a href="{{url_for('train')}}" class="btn btn-primary">Train</a></p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services text-center d-block">
+              <div class="icon"><span class="flaticon-compass-symbol"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Translate</h3>
+                <p>Use our site to translate ASL into english. Get back to us with your opinions and valuable feedback.</p>
+                <br><br>
+                <p><a href="{{url_for('vfeed')}}" class="btn btn-primary">Translate</a></p>
+              </div>
+            </div>    
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services text-center d-block">
+              <div class="icon"><span class="flaticon-layers"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Collaborate</h3>
+                <p>Collaborate with the sign community by using our forum to create posts that educate the masses about sign AI or upload your datasets and models to help other creators.</p>
+                <p><a href="{{url_for('forum')}}" class="btn btn-primary">Collaborate</a></p>
+              </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="section-counter" data-section="about">
+    	<div class="container">
+    		<div class="row d-flex">
+    			<div class="col-md-6 col-lg-4 d-flex">
+    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/tenor.gif);">
+    					<div class="request-quote py-5">
+	    					
+	    				
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-8 pl-lg-5 py-5">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<span class="subheading">Welcome</span>
+		            <h2 class="mb-4">Solution to all your sign needs</h2>
+		            <p>The proposed system will act as the translator. The system will translate the signs read from a video feed through a camera and produces a text output which will be later converted into an audio output in any of the available languages. The system can also be subsequently trained with other variants of sign languages.</p>
+		            <p>A trainable Sign language translator for Asl that can also be trained with other Sign languages.</p>
+		            <p>An efficient method to share sign language data with the world.</p>
+		          </div>
+		        </div>
+		    		<div class="row">
+		          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate d-flex">
+		            <div class="block-18 text-center p-4 mb-4 align-self-stretch d-flex">
+		              <div class="text">
+		                <strong class="number" data-number="195">0</strong>
+		                <span>Countries</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate d-flex">
+		            <div class="block-18 text-center py-4 px-3 mb-4 align-self-stretch d-flex">
+		              <div class="text">
+		                <strong class="number" data-number="6500">0</strong>
+		                <span>Languages</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate d-flex">
+		            <div class="block-18 text-center py-4 px-3 mb-4 align-self-stretch d-flex">
+		              <div class="text">
+		                <strong class="number" data-number="300">0</strong>
+		                <span>Sign Languages</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate d-flex">
+		            <div class="block-18 text-center py-4 px-3 mb-4 align-self-stretch d-flex">
+		              <div class="text">
+		                <strong class="number" data-number="10">0</strong>
+		                <span>% of global polulation</span>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+	<br>
+  <br>
+
+    <footer class="ftco-footer ftco-section" id="loio">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Express</h2>
+              <p>A community for sign AI enthusiasts and people who are willing to help others express themselves.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Developers</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Pablo Antonio Philip</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Naveen</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Thuyavan</a></li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+  
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>

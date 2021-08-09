@@ -1,0 +1,11 @@
+
+
+  <body>
+    <form action="{{ url_for('upload') }}" method="POST" enctype = "multipart/form-data"> 
+        <input type="file" id="myFile" name="file">
+        <input type="submit">
+      </form>
+    {% for mesg in get_flashed_messages() %}
+    <h1>{{ mesg }}</h1>
+    {% endfor %}
+  </body>
